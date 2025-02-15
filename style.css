@@ -1,44 +1,43 @@
-.body{
+.body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
+.cabecalho {
     background: #BBBBBB;
     padding: 20px 0;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #fffcfc;
+                font-size: 1.5rem;
+                font-weight: bold;
+
+                &:hover {
+                    border-bottom: 2px solid #fffcfc;
+                }
+            }
+        }
+    }
 }
 
-.caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
+.img_logo {
+    width: 175px;
 }
 
 
-.produtos{
+
+.produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
@@ -48,6 +47,7 @@ nav a:hover{
     display: inline-block;
     text-align: center;
     width: 30%;
+    height: 200px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -60,37 +60,37 @@ nav a:hover{
     border-color: #c78c19;
 }
 
-.produtos li:active{
+.produtos li:active {
     border-color: #088619;
 }
 
-.produtos li:hover h2{
+.produtos li:hover h2 {
     font-size: 40px;
 }
 
-.produtos h2{
+.produtos h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.preçoProduto{
+.preçoProduto {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.descriçaoProduto{
+.descriçaoProduto {
     font-size: 18px;
 }
 
-footer{
+footer {
     text-align: center;
-    background:url(bg.jpg) ;
+    background: url(./assets/bg.jpg);
     padding: 40px 0;
-    
+
 }
 
-.copyright{
+.copyright {
     color: white;
     margin: 8px 0 0;
     font-size: 14px;
@@ -99,34 +99,35 @@ footer{
 
 
 
-main{
+main {
     width: 940px;
     margin: 0 auto;
 }
 
-.formulario{
+.formulario {
     margin: 40px 0;
 }
 
 
-form label, form legend{
+form label,
+form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-.input-padrao{
+.input-padrao {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-.checkbox{
+.checkbox {
     margin: 20px 0;
 }
 
-.enviar{
+.enviar {
     width: 40%;
     padding: 15px 0;
     background: orange;
@@ -138,7 +139,8 @@ form label, form legend{
     transition: 2s all;
     cursor: pointer;
 }
-.enviar:hover{
+
+.enviar:hover {
     background: darkorange;
     transform: scale(1.1);
 }
@@ -146,24 +148,24 @@ form label, form legend{
 
 /* conteúdo principal */
 
-.banner{
+.banner {
     width: 100%;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
     text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
     clear: left;
 }
 
-.ImgUtensilios{
+.ImgUtensilios {
     width: 150px;
     float: left;
     margin: 0 20px 20px 0;
 }
 
-.principal{
+.principal {
     padding: 3em 0;
     background: #FEFEFE;
 }
@@ -172,42 +174,42 @@ form label, form legend{
     margin-bottom: 1em;
 }
 
-.principal strong{
+.principal strong {
     font-weight: bold;
 }
 
-.principal em{
+.principal em {
     font-style: italic;
 }
 
 
-.mapa{
+.mapa {
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE,#888888);
+    background: linear-gradient(#FEFEFE, #888888);
 }
 
-.mapa p{
+.mapa p {
     margin: 0 0 2em;
     text-align: center;
 }
 
-.beneficios{
+.beneficios {
     padding: 3em 0;
-    background: linear-gradient(#888888,#0e0e0e00) ;
+    background: linear-gradient(#888888, #0e0e0e00);
 }
 
-.conteudo-beneficios{
+.conteudo-beneficios {
     width: 640px;
     margin: 0 auto;
 }
 
-.lista-beneficios{
+.lista-beneficios {
     width: 40%;
     display: inline-block;
     vertical-align: top;
 }
 
-.itens{
+.itens {
     line-height: 1.5;
 }
 
@@ -215,27 +217,27 @@ form label, form legend{
     font-weight: bold;
 }*/
 
-.imgBeneficios{
+.imgBeneficios {
     width: 60%;
     opacity: 0.7;
     transition: 500ms;
 }
 
-.imgBeneficios:hover{
+.imgBeneficios:hover {
     width: 382px;
     opacity: 1;
     box-shadow: 10px 10px 10px 10px #919191;
 
 }
 
-.video{
+.video {
     width: 560px;
     margin: 2em auto;
     transition: 1s;
     opacity: 0.7;
 }
 
-.video:hover{
+.video:hover {
     width: 640px;
     opacity: 1;
 }
@@ -244,40 +246,40 @@ form label, form legend{
 
 @media screen and (max-width: 480px) {
 
-header{
-    background: #CCCCCC;
-}
+    header {
+        background: #CCCCCC;
+    }
 
-.caixa{
-    width: 250%;
-    text-align: center;
-    background: #CCCCCC;
-    padding: 30px 0;
-}
+    .caixa {
+        width: 250%;
+        text-align: center;
+        background: #CCCCCC;
+        padding: 30px 0;
+    }
 
-.caixa h1{
-    text-align: center;
-}
+    .caixa h1 {
+        text-align: center;
+    }
 
-nav{
-    position: static;
-}
+    nav {
+        position: static;
+    }
 
 
-nav a{
-    font-size: 30px;
-}
+    nav a {
+        font-size: 30px;
+    }
 
-.banner{
-    width: 250%;
-}
+    .banner {
+        width: 250%;
+    }
 
-.principal{
-width: 0 50%;
-}
+    .principal {
+        width: 0 50%;
+    }
 
-section h2{
-    font-size: 45px;
-}
+    section h2 {
+        font-size: 45px;
+    }
 
 }
