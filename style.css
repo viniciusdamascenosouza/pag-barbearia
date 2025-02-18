@@ -6,7 +6,6 @@ li {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .cabecalho {
     background: #494949;
     padding: .5rem 0;
@@ -43,29 +42,34 @@ li {
     margin-bottom: 2rem;
 }
 
-.principal {
-    padding: 3em 0;
+.sobre {
+    margin: 0 3em;
     background: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+}
 
+.conteiner-sobre {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     gap: 2rem;
-    
+
     strong {
         font-weight: bold;
     }
-    
+
     em {
         font-style: italic;
     }
 }
 
-.titulo-principal {
+.titulo-principal1 {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .textos-sobre {
@@ -81,6 +85,7 @@ li {
 
 .mapa {
     padding: 3em 0;
+    margin: 0 3rem;
     background: linear-gradient(#FEFEFE, #888888);
 }
 
@@ -92,150 +97,35 @@ li {
     margin-bottom: 1rem;
 }
 
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    height: 200px;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-
-.produtos li:hover {
-    border-color: #c78c19;
-}
-
-.produtos li:active {
-    border-color: #088619;
-}
-
-.produtos li:hover h2 {
-    font-size: 40px;
-}
-
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.preçoProduto {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.descriçaoProduto {
-    font-size: 18px;
-}
-
-footer {
-    text-align: center;
-    background: url(./assets/bg.jpg);
-    padding: 40px 0;
-
-}
-
-.copyright {
-    color: white;
-    margin: 8px 0 0;
-    font-size: 14px;
-}
-
-
-
-
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
-.formulario {
-    margin: 40px 0;
-}
-
-
-form label,
-form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox {
-    margin: 20px 0;
-}
-
-.enviar {
-    width: 40%;
-    padding: 15px 0;
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 2s all;
-    cursor: pointer;
-}
-
-.enviar:hover {
-    background: darkorange;
-    transform: scale(1.1);
-}
-
-
 .beneficios {
-    padding: 3em 0;
+    padding: 3rem 3rem;
+    margin: 0 3rem;
     background: linear-gradient(#888888, #0e0e0e00);
 }
 
-.conteudo-beneficios {
-    width: 640px;
-    margin: 0 auto;
+.titulo-principal2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-bottom: 1rem;
 }
 
-.lista-beneficios {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+.conteudo-beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
 .itens {
+    list-style: disc;
     line-height: 1.5;
 }
 
-/*.itens:first-child{
-    font-weight: bold;
-}*/
-
-.imgBeneficios {
-    width: 60%;
-    opacity: 0.7;
-    transition: 500ms;
-}
-
-.imgBeneficios:hover {
-    width: 382px;
-    opacity: 1;
-    box-shadow: 10px 10px 10px 10px #919191;
-
+.img-beneficios {
+    width: 350px;
 }
 
 .video {
@@ -249,6 +139,20 @@ form legend {
     width: 640px;
     opacity: 1;
 }
+
+.footer {
+    text-align: center;
+    background: url(./assets/bg.jpg);
+    padding: .2rem 0;
+}
+
+.copyright {
+    color: white;
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+/* add margin em toda main */
 
 /*resposividade*/
 
@@ -268,24 +172,4 @@ form legend {
     .caixa h1 {
         text-align: center;
     }
-
-    nav {
-        position: static;
-    }
-
-
-    nav a {
-        font-size: 30px;
-    }
-
-
-
-    .principal {
-        width: 0 50%;
-    }
-
-    section h2 {
-        font-size: 45px;
-    }
-
 }
