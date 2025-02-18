@@ -1,10 +1,11 @@
+li {
+    list-style: none;
+}
+
 .body {
     font-family: 'Montserrat', sans-serif;
 }
 
-li {
-    list-style: none;
-}
 
 .cabecalho {
     background: #494949;
@@ -13,30 +14,83 @@ li {
 
     justify-content: space-around;
     align-items: center;
+}
 
-    ul {
-        display: flex;
-        gap: 1rem;
+.navegacao {
+    display: flex;
+    gap: 1rem
+}
 
+.link_navegacao {
+    text-decoration: none;
+    color: #fffcfc;
+    font-size: 1.5rem;
+    font-weight: bold;
 
-        a {
-            text-decoration: none;
-            color: #fffcfc;
-            font-size: 1.5rem;
-            font-weight: bold;
-
-            &:hover {
-                border-bottom: 2px solid #fffcfc;
-            }
-        }
+    &:hover {
+        border-bottom: 2px solid #fffcfc;
     }
 }
 
-.img_logo {
+.img-logo {
     width: 125px;
 }
 
+.banner {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
 
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+    
+    strong {
+        font-weight: bold;
+    }
+    
+    em {
+        font-style: italic;
+    }
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.textos-sobre {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.img-equipamentos {
+    width: 250px;
+    float: left;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.titulo-mapa {
+    font-size: 2rem;
+    font-weight: semibold;
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 .produtos {
     width: 940px;
@@ -146,55 +200,6 @@ form legend {
     transform: scale(1.1);
 }
 
-
-/* conteúdo principal */
-
-.banner {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-.tituloPrincipal {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-    clear: left;
-}
-
-.ImgUtensilios {
-    width: 150px;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-.principal {
-    padding: 3em 0;
-    background: #FEFEFE;
-}
-
-.principal p {
-    margin-bottom: 1em;
-}
-
-.principal strong {
-    font-weight: bold;
-}
-
-.principal em {
-    font-style: italic;
-}
-
-
-.mapa {
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
-}
-
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-}
 
 .beneficios {
     padding: 3em 0;
