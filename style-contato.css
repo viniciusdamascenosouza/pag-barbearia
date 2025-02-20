@@ -97,3 +97,15 @@ main {
     border: none;
     cursor: pointer;
 }
+
+.footer {
+    text-align: center;
+    background: url(./assets/bg.jpg);
+    padding: .2rem 0;
+}
+
+.copyright {
+    color: white;
+    margin: 8px 0 0;
+    font-size: 14px;
+}
