@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style-contato.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,87 +17,78 @@
 
 
 <body class="body">
-    <header>
-        <div class="caixa">
-            <img src="logo.png" alt="Logo da Barbearia Alura">
-            <nav>
-                <ul class="navegacao">
-                    <li> <a href="index.html">Home</a> </li>
-                    <li> <a href="produtos.html">Produtos</a> </li>
-                    <li> <a href="contato.html">Contato</a> </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="cabecalho">
+        <img class="img-logo" src="./assets/logo.png" alt="Logo da Barbearia Alura">
+        <ul class="navegacao">
+            <li> <a class="link-navegacao" href="index.html">Home</a> </li>
+            <li> <a class="link-navegacao" href="produtos.html">Produtos</a> </li>
+            <li> <a class="link-navegacao" href="contato.html">Contato</a> </li>
+        </ul>
     </header>
 
     <main>
-
         <form class="formulario">
+            <div class="zona-preenchimento">
+                <div class="inputs">
+                    <div class="input">
+                        <label class="label-inputs" for="nomeEsobrenome">Nome e sobrenome:</label>
+                        <input type="text" id="nomeEsobrenome" class="input-padrao" required>
+                    </div>
 
-            <label for="nomeEsobrenome">Nome e sobrenome:</label>
-            <input type="text" id="nomeEsobrenome" class="input-padrao" required>
+                    <div class="input">
+                        <label class="label-inputs" for="email">Email:</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <div class="input">
+                        <label class="label-inputs" for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                </div>
 
+                <div class="input">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                </div>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                <fieldset class="opcoes-container">
+                    <div>
+                        <legend class="titulo-legend">Como prefere o nosso contato?</legend>
+                    </div>
+                    <div>
+                        <label for="radio-email"><input type="radio" name="contato" value="email"
+                                id="radio-email">Email</label>
 
-            <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-telefone"><input type="radio" name="contato" value="ligação"
+                                id="radio-telefone">Ligação</label>
 
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                        <label for="radio-wpp"><input type="radio" name="contato" value="wpp" id="radio-wpp"
+                                checked>WhatsApp</label>
+                    </div>
+                </fieldset>
 
-                <label for="radio-telefone"><input type="radio" name="contato" value="ligação"
-                        id="radio-telefone">Ligação</label>
+                <fieldset class="opcoes-container">
+                    <div>
+                        <legend class="titulo-legend">Qual horário deseja ser atendido?</legend>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="">Manhã</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noite</option>
+                        </select>
+                    </div>
+                </fieldset>
 
-                <label for="radio-wpp"><input type="radio" name="contato" value="wpp" id="radio-wpp"
-                        checked>WhatsApp</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Qual horário deseja ser atendido?</legend>
-                <select>
-                    <option value="">Manhã</option>
-                    <option value="">Tarde</option>
-                    <option value="">Noite</option>
-                </select>
-            </fieldset>
-
-            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas ofertas por
-                email?</label>
+                <div>
+                    <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas ofertas por
+                        email?</label>
+                </div>
+            </div>
 
             <input type="submit" value="Enviar formulário" class="enviar">
-
         </form>
-
-        <table>
-
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-
-        </table>
 
     </main>
 
